@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ 
+
+  body {
+    @apply  pb-0 font-roboto;
+  }
+}
+
+
+@layer utilities{
+  /* TYPOGRAPHY */
+  .h1-bold{
+    @apply font-bold text-[56px] leading-[110%];
+  }
+  .h2-bold{
+    @apply font-bold text-[48px] leading-[120%];
+  }
+  .h3-bold{
+    @apply font-bold text-[36px] leading-[120%];
+  }
+  .h4-bold{
+    @apply font-bold text-[24px] leading-[140%];
+  }
+  .h5-bold{
+    @apply font-bold text-[18px] leading-[150%];
+  }
+  .h6-bold{
+    @apply font-bold text-[16px] leading-[150%];
+  }
+  .p{
+    @apply text-[16px] leading-[150%];
+  }
+  .p-large{
+    @apply text-[18px] leading-[150%];
+  }
+  .label{
+    @apply text-[24px] leading-[120%] bg-gradient-to-tr from-[#373FFF] to-[#3ACAF8] bg-clip-text
+    text-transparent;
+  }
+}
+
+@layer components {
+  .btn-1{
+    @apply bg-primary text-white font-roboto font-bold px-[40px] py-[16px]
+     rounded-[12px] hover:bg-[#313852] transition-colors duration-300;
+  }
+  .btn-2{
+    @apply bg-white text-primary font-bold px-[40px] py-[16px] rounded-[12px] border-lightviolet
+    border-2 hover:bg-primary hover:text-white hover:border-none;
+  }
+  .btn-3{
+    @apply bg-white text-primary font-bold px-[40px] py-[16px] rounded-[12px] border-none;
+  }
+}
