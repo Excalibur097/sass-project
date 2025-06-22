@@ -29,7 +29,7 @@ const testimonials = [
     para5: 'eat aliquid nulla rem',
     image:'/images/customer3.png',
     name:'Sam Preston',
-    rank:'CEO'
+    rank:'CTO'
   },
 ]
 

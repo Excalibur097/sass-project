@@ -62,7 +62,7 @@ const Navbar = () => {
             <Link to={'/product'} className="text-2xl">Product</Link>
           </li>
            <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/pricing'} className="text-2xl">Picing</Link>
+            <Link to={'/pricing'} className="text-2xl">Pricing</Link>
           </li>
            <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
             <Link to={'/aboutus'} className="text-2xl">About Us</Link>
