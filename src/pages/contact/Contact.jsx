@@ -1,9 +1,12 @@
 import React from 'react'
+import Headerc from './Headerc'
+import Grow from '../home/Grow'
 
 const Contact = () => {
   return (
     <div>
-      Contact
+      <Headerc/>
+      <Grow/>
     </div>
   )
 }
