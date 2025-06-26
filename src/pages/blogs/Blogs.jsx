@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Headerb from './Headerb'
+import Trendingpost from './Trendingpost';
+import Posts from './Posts';
 
 const Blogs = () => {
   return (
     <div>
-      Blogs
+      <Headerb/>
+      <Trendingpost/>
+      <Posts/>
     </div>
   )
 }

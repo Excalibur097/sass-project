@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link to={'/aboutus'}>About Us</Link>
           </li>
            <li className='text-primary font-bold cursor-pointer'>
-            <Link to={'/blog'}>Blog</Link>
+            <Link to={'/blogs'}>Blog</Link>
           </li>
            <li className='text-primary font-bold cursor-pointer'>
             <Link to={'/contact'}>Contact</Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <Link to={'/aboutus'} className="text-2xl">About Us</Link>
           </li>
            <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/blog'} className="text-2xl">Blog</Link>
+            <Link to={'/blogs'} className="text-2xl">Blog</Link>
           </li>
            <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
             <Link to={'/contact'} className="text-2xl">Contact</Link>

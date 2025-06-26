@@ -53,7 +53,7 @@ const Subscriptions = () => {
   }
 
   return (
-    <div className='px-[30px] md:px-[70px] mb-[100px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+    <div className="px-[30px] md:px-[70px] mb-[100px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {
         pricing.map((item)=>{
           return(
