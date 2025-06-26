@@ -15,7 +15,7 @@ const Navbar = () => {
       <div>
         {/*Logo*/}
         <div className='text-2xl font-bold text-gray-800 cursor-pointer'>
-          Finsweet
+          {`{Finsweet`}
         </div>
       </div>
       <div>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <button className="btn-1">Free trial</button>
         </ul>
 
-        <div className="flex flex-col w-[50px] lg:hidden"onClick={toggleMenu}>
+        <div className="flex flex-col w-[50px] lg:hidden z-50"onClick={toggleMenu}>
           <div className="w-full h-[3px] bg-primary mb-[5px]"></div>
           <div className="w-full h-[3px] bg-primary mb-[5px]"></div>
           <div className="w-full h-[3px] bg-primary"></div>
@@ -51,30 +51,32 @@ const Navbar = () => {
     </div>
 
     {/*MobileMenu */}
-    <div className={`fixed top-0 left-0 w-full h-screen bg-primary flex flex-col justify-top
-    items-start transition-transform duration-500 ease-out ${isOpen? 'translate-y-0':'-translate-y-full'}
-    tablet:hiden`}>
-        <ul className="pt-[30px] px-[60px]">
-          <li className='text-white cursor-pointer mb-[30px] tablet:text-4xl' onClick={toggleMenu}>
-            <Link to={'/'} className="text-2xl">Home</Link>
-          </li>
-           <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/product'} className="text-2xl">Product</Link>
-          </li>
-           <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/pricing'} className="text-2xl">Pricing</Link>
-          </li>
-           <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/aboutus'} className="text-2xl">About Us</Link>
-          </li>
-           <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/blogs'} className="text-2xl">Blog</Link>
-          </li>
-           <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
-            <Link to={'/contact'} className="text-2xl">Contact</Link>
-          </li>
-          <button className="btn-2" onClick={toggleMenu}>Free trial</button>
-        </ul>
+    <div className={`fixed top-0 left-0 w-full h-screen bg-primary flex justify-between transition-transform 
+    duration-500 ease-out ${isOpen? 'translate-y-0':'-translate-y-full'} tablet:hiden`}>
+      <div>
+      <ul className="pt-[30px] px-[60px]">
+        <li className='text-white cursor-pointer mb-[30px] tablet:text-4xl' onClick={toggleMenu}>
+          <Link to={'/'} className="text-2xl">Home</Link>
+        </li>
+          <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
+          <Link to={'/product'} className="text-2xl">Product</Link>
+        </li>
+          <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
+          <Link to={'/pricing'} className="text-2xl">Pricing</Link>
+        </li>
+          <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
+          <Link to={'/aboutus'} className="text-2xl">About Us</Link>
+        </li>
+          <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
+          <Link to={'/blogs'} className="text-2xl">Blog</Link>
+        </li>
+          <li className='text-white cursor-pointer mb-[30px]' onClick={toggleMenu}>
+          <Link to={'/contact'} className="text-2xl">Contact</Link>
+        </li>
+        <button className="btn-2 w-[150px]" onClick={toggleMenu}>Free trial</button>
+      </ul>
+      </div>
+      <h3 className="text-2xl pt-[30px] px-[60px] text-white" onClick={toggleMenu}>X</h3>
     </div>
    </nav>
   )

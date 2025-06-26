@@ -16,22 +16,22 @@
 @layer utilities{
   /* TYPOGRAPHY */
   .h1-bold{
-    @apply font-bold text-[56px] leading-[110%];
+    @apply font-bold text-[56px] leading-[110%] text-primary;
   }
   .h2-bold{
-    @apply font-bold text-[48px] leading-[120%];
+    @apply font-bold text-[48px] leading-[120%] text-primary;
   }
   .h3-bold{
-    @apply font-bold text-[36px] leading-[120%];
+    @apply font-bold text-[36px] leading-[120%] text-primary;
   }
   .h4-bold{
-    @apply font-bold text-[24px] leading-[140%];
+    @apply font-bold text-[24px] leading-[140%] text-primary;
   }
   .h5-bold{
-    @apply font-bold text-[18px] leading-[150%];
+    @apply font-bold text-[18px] leading-[150%] text-primary;
   }
   .h6-bold{
-    @apply font-bold text-[16px] leading-[150%];
+    @apply font-bold text-[16px] leading-[150%] text-primary;
   }
   .p{
     @apply text-[16px] leading-[150%];

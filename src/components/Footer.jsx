@@ -44,7 +44,7 @@ const Footer = () => {
           <div></div>
         </div>
         <div className='flex gap-[15px] items-center'>
-          <p className='text-xs'>@ Copyright finsweet 2025</p>
+          <p className='text-xs'>&copy; Copyright finsweet 2025</p>
           <img src="icons/footer1.svg " alt="facebook-logo" />
           <img src="icons/footer2.svg " alt="twitter-logo" />
           <img src="icons/footer3.svg " alt="instagram-logo" />

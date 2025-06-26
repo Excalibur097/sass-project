@@ -2,6 +2,7 @@ import React from 'react';
 import Headerb from './Headerb'
 import Trendingpost from './Trendingpost';
 import Posts from './Posts';
+import Grow from '../home/Grow';
 
 const Blogs = () => {
   return (
@@ -9,6 +10,7 @@ const Blogs = () => {
       <Headerb/>
       <Trendingpost/>
       <Posts/>
+      <Grow/>
     </div>
   )
 }

@@ -18,12 +18,12 @@ const Headerp = () => {
       </p>
 
       <div className='flex gap-4 p-[5px] bg-lightviolet rounded-[12px]'>
-        <h5 className={`h6-bold py-[10px] px-[15px] rounded-[12px] ${monthly? 'bg-primary text-white'
+        <h5 className={`text-[16px] font-bold py-[10px] px-[15px] rounded-[12px] ${monthly? 'bg-primary text-white'
         :''} cursor-pointer`} onClick={toggleMonthly}>
           Monthly
         </h5>
 
-        <h5 className={`h6-bold py-[10px] px-[15px] rounded-[12px] ${!monthly? 'bg-primary text-white':''}
+        <h5 className={`text-[16px] font-bold py-[10px] px-[15px] rounded-[12px] ${!monthly? 'bg-primary text-white':''}
         cursor-pointer`} onClick={toggleMonthly}>
           Yearly
         </h5>
